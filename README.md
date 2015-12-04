@@ -1,0 +1,2 @@
+# afomincom
+The personal website
