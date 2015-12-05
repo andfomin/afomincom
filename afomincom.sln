@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "afomincom", "afomincom\afomincom.csproj", "{4F41A717-8C31-42DA-B44F-2EC898B89952}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{A60F0F59-96D0-4008-95C4-0665402CCFE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{895CAC3B-6977-493F-A2FF-86F58C4668CA}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{9D4B1FF9-DC90-46CF-B2F7-FCB18E3C2D9C}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\afomincom.json = PublishScripts\Templates\afomincom.json
+		PublishScripts\Templates\afomincom.param.dev.json = PublishScripts\Templates\afomincom.param.dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{C9C4FCE9-B9BC-4698-A577-C472FF9607E5}"
+	ProjectSection(SolutionItems) = preProject
+		_Readme.txt = _Readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F41A717-8C31-42DA-B44F-2EC898B89952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F41A717-8C31-42DA-B44F-2EC898B89952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F41A717-8C31-42DA-B44F-2EC898B89952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F41A717-8C31-42DA-B44F-2EC898B89952}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{895CAC3B-6977-493F-A2FF-86F58C4668CA} = {A60F0F59-96D0-4008-95C4-0665402CCFE5}
+		{9D4B1FF9-DC90-46CF-B2F7-FCB18E3C2D9C} = {A60F0F59-96D0-4008-95C4-0665402CCFE5}
+	EndGlobalSection
+EndGlobal

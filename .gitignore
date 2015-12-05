@@ -189,8 +189,12 @@ FakesAssemblies/
 # Node.js Tools for Visual Studio
 .ntvs_analysis.dat
 
-# Visual Studio 6 build log
-*.plg
-
-# Visual Studio 6 workspace options file
-*.opt
+#Mr Developer
+.mr.developer.cfg
+*.map
+afomincom/app/*/*.js
+afomincom/bower_components/
+afomincom/node_modules/
+packages/
+.vs/
+PublishScripts/
