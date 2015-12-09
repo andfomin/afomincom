@@ -60,17 +60,15 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -111,6 +109,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
       <Private>True</Private>
@@ -127,92 +126,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bower_installer\bootstrap\bootstrap.min.js" />
-    <Content Include="bower_installer\bootstrap\glyphicons-halflings-regular.svg" />
-    <Content Include="bower_installer\jquery\jquery.min.js" />
-    <Content Include="content\styles\site.css" />
+    <Content Include="content\images\me.jpg" />
+    <Content Include="content\styles\homepage.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="bower.json" />
-    <Content Include="bower_installer\jquery\jquery.min.map" />
-    <Content Include="bower_installer\bootstrap\alerts.less" />
-    <Content Include="bower_installer\bootstrap\badges.less" />
-    <Content Include="bower_installer\bootstrap\bootstrap.less" />
-    <Content Include="bower_installer\bootstrap\breadcrumbs.less" />
-    <Content Include="bower_installer\bootstrap\button-groups.less" />
-    <Content Include="bower_installer\bootstrap\buttons.less" />
-    <Content Include="bower_installer\bootstrap\carousel.less" />
-    <Content Include="bower_installer\bootstrap\close.less" />
-    <Content Include="bower_installer\bootstrap\code.less" />
-    <Content Include="bower_installer\bootstrap\component-animations.less" />
-    <Content Include="bower_installer\bootstrap\dropdowns.less" />
-    <Content Include="bower_installer\bootstrap\forms.less" />
-    <Content Include="bower_installer\bootstrap\glyphicons-halflings-regular.eot" />
-    <Content Include="bower_installer\bootstrap\glyphicons-halflings-regular.ttf" />
-    <Content Include="bower_installer\bootstrap\glyphicons-halflings-regular.woff" />
-    <Content Include="bower_installer\bootstrap\glyphicons-halflings-regular.woff2" />
-    <Content Include="bower_installer\bootstrap\glyphicons.less" />
-    <Content Include="bower_installer\bootstrap\grid.less" />
-    <Content Include="bower_installer\bootstrap\input-groups.less" />
-    <Content Include="bower_installer\bootstrap\jumbotron.less" />
-    <Content Include="bower_installer\bootstrap\labels.less" />
-    <Content Include="bower_installer\bootstrap\list-group.less" />
-    <Content Include="bower_installer\bootstrap\media.less" />
-    <Content Include="bower_installer\bootstrap\mixins.less" />
-    <Content Include="bower_installer\bootstrap\mixins\alerts.less" />
-    <Content Include="bower_installer\bootstrap\mixins\background-variant.less" />
-    <Content Include="bower_installer\bootstrap\mixins\border-radius.less" />
-    <Content Include="bower_installer\bootstrap\mixins\buttons.less" />
-    <Content Include="bower_installer\bootstrap\mixins\center-block.less" />
-    <Content Include="bower_installer\bootstrap\mixins\clearfix.less" />
-    <Content Include="bower_installer\bootstrap\mixins\forms.less" />
-    <Content Include="bower_installer\bootstrap\mixins\gradients.less" />
-    <Content Include="bower_installer\bootstrap\mixins\grid-framework.less" />
-    <Content Include="bower_installer\bootstrap\mixins\grid.less" />
-    <Content Include="bower_installer\bootstrap\mixins\hide-text.less" />
-    <Content Include="bower_installer\bootstrap\mixins\image.less" />
-    <Content Include="bower_installer\bootstrap\mixins\labels.less" />
-    <Content Include="bower_installer\bootstrap\mixins\list-group.less" />
-    <Content Include="bower_installer\bootstrap\mixins\nav-divider.less" />
-    <Content Include="bower_installer\bootstrap\mixins\nav-vertical-align.less" />
-    <Content Include="bower_installer\bootstrap\mixins\opacity.less" />
-    <Content Include="bower_installer\bootstrap\mixins\pagination.less" />
-    <Content Include="bower_installer\bootstrap\mixins\panels.less" />
-    <Content Include="bower_installer\bootstrap\mixins\progress-bar.less" />
-    <Content Include="bower_installer\bootstrap\mixins\reset-filter.less" />
-    <Content Include="bower_installer\bootstrap\mixins\reset-text.less" />
-    <Content Include="bower_installer\bootstrap\mixins\resize.less" />
-    <Content Include="bower_installer\bootstrap\mixins\responsive-visibility.less" />
-    <Content Include="bower_installer\bootstrap\mixins\size.less" />
-    <Content Include="bower_installer\bootstrap\mixins\tab-focus.less" />
-    <Content Include="bower_installer\bootstrap\mixins\table-row.less" />
-    <Content Include="bower_installer\bootstrap\mixins\text-emphasis.less" />
-    <Content Include="bower_installer\bootstrap\mixins\text-overflow.less" />
-    <Content Include="bower_installer\bootstrap\mixins\vendor-prefixes.less" />
-    <Content Include="bower_installer\bootstrap\modals.less" />
-    <Content Include="bower_installer\bootstrap\navbar.less" />
-    <Content Include="bower_installer\bootstrap\navs.less" />
-    <Content Include="bower_installer\bootstrap\normalize.less" />
-    <Content Include="bower_installer\bootstrap\pager.less" />
-    <Content Include="bower_installer\bootstrap\pagination.less" />
-    <Content Include="bower_installer\bootstrap\panels.less" />
-    <Content Include="bower_installer\bootstrap\popovers.less" />
-    <Content Include="bower_installer\bootstrap\print.less" />
-    <Content Include="bower_installer\bootstrap\progress-bars.less" />
-    <Content Include="bower_installer\bootstrap\responsive-embed.less" />
-    <Content Include="bower_installer\bootstrap\responsive-utilities.less" />
-    <Content Include="bower_installer\bootstrap\scaffolding.less" />
-    <Content Include="bower_installer\bootstrap\tables.less" />
-    <Content Include="bower_installer\bootstrap\theme.less" />
-    <Content Include="bower_installer\bootstrap\thumbnails.less" />
-    <Content Include="bower_installer\bootstrap\tooltip.less" />
-    <Content Include="bower_installer\bootstrap\type.less" />
-    <Content Include="bower_installer\bootstrap\utilities.less" />
-    <Content Include="bower_installer\bootstrap\variables.less" />
-    <Content Include="bower_installer\bootstrap\wells.less" />
-    <Content Include="content\styles\bootstrap-custom.less" />
-    <Content Include="content\styles\site-variables.less" />
-    <Content Include="content\styles\site.less" />
     <None Include="Properties\PublishProfiles\afomin.pubxml" />
     <Content Include="scripts\_references.js" />
     <Content Include="Web.config" />
@@ -226,14 +143,12 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_ResponsiveBreakpointsPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="App_Data\" />
-    <Folder Include="bower_components\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

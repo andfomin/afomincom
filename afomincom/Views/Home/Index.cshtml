@@ -1,31 +1,170 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<link href="~/content/styles/homepage.css" rel="stylesheet" />
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="container-fluid">
+
+    @Html.Partial("_ResponsiveBreakpointsPartial")
+
+    <div class="row">
+        <div class="col-xs-offset-3 col-sm-offset-1 col-lg-offset-2 col-xs-6 col-sm-5 col-md-4 col-lg-3" id="myImgCol">
+            <img class="img-responsive" src="~/content/images/me.jpg" alt="Me" />
+            <div class="my-blur-v my-blur-left"></div>
+            <div class="my-blur-v my-blur-right"></div>
+        </div>
+        @*<div class="col-xs-2"></div>*@
+        <div class="col-lg-offset-1 col-xs-12 col-sm-6 col-lg-5" id="myHelloCol">
+            <p>
+                Hello! My&nbsp;name&nbsp;is Andrey&nbsp;Fomin.
+            </p>
+            <p>
+                I love solving problems by developing software in Visual&nbsp;Studio.
+            </p>
+        </div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<div class="container">
+    <h2 style="margin-top:30px;">Quick Facts About Me</h2>
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <h3><i class="fa fa-wrench fa-lg fa-fw"></i>&nbsp;Skills</h3>
+            <p>
+                I have worked in many small and medium companies as well as an independant developer. Long story short, here are some facts about my professional experience.
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h3><i class="fa fa-university fa-lg fa-fw"></i>&nbsp;Experience</h3>
+            <p>
+                I started my company <a href="http://www.dignicom.com" target="_blank">Dignicom</a> in 2012. The company develops and operates an educational website.
+            </p>
+            <p>
+                I worked for entertainment company <a href="http://www.ligastavok.com/en/" target="_blank">Liga Stavok</a> from 2008 to 2011.
+                I was resposible for the development and maintenance of the core platform which sustained exponential user growth. The company uses the Microsoft technology stack.
+            </p>
+            <p>
+                I worked for a Russian company affiliated with <a href="http://www.starcomsystems.com/" target="_blank">Starcom Systems</a> from 2005 to 2007.
+                The company develped and operated a remote monitoring system. I wrote software using Pascal, Perl, C++, C#, <span class="text-nowrap">Transact-SQL</span>.
+            </p>
+            <p>
+                I was an independant Borland Technology Partner from 2000 to 2004. I was developing and selling components for Borland Delhpi and Borland C++Builder,
+                <a href="http://cc.codegear.com/partners/bcb6/quasidata/dbaltgrid_suite_1_4/index.html" target="_blank">this one</a> and
+                <a href="http://cc.codegear.com/partners/bcb6/quasidata/transfer_once_1_2/index.html" target="_blank">another one</a>.
+            </p>
+            <p>Once upon a time ...</p>
+        </div>
+        <div class="clearfix visible-md-block visible-lg-block"></div>
+        <div class="col-sm-12 col-md-6">
+            <h3><i class="fa fa-graduation-cap fa-lg fa-fw"></i>&nbsp;Education</h3>
+            <p>
+                I graduated from
+                <a href="https://en.wikipedia.org/wiki/Bauman_Moscow_State_Technical_University" target="_blank">Moscow State Technical University</a>,
+                which is the oldest and largest Russian technical university, in 1990.
+                I majored in Radio Electronics.
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h3><i class="fa fa-map-marker fa-lg fa-fw"></i>&nbsp;Location</h3>
+            <p>
+                I live in Toronto, Ontario.
+            </p>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <hr />
+    <h2 style="margin-top:30px;margin-bottom:30px;">Quirky Facts About Me</h2>
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <p>
+                I was born in southern Russia. I used to eat a lot of caviar when I was in school.
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <p>
+               I have been living in Canada since 2011 and I am a Canadian citizen. Although I played hockey a few seasons for my school team, I find watching hockey boring.
+            </p>
+        </div>
+        <div class="clearfix visible-md-block visible-lg-block"></div>
+        <div class="col-sm-12 col-md-6">
+            <p>
+                Each member of our family has got a bike; we have a couple of bikes with 28" wheels and a couple of bikes with 18" wheels.
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <p>
+            </p>
+        </div>
+        <div class="clearfix visible-md-block visible-lg-block"></div>
+        <div class="col-sm-12 col-md-6">
+            <p>
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <p>
+            </p>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+
+</div>
+
+<div class="container-fluid my-footer">
+    <div class="row">
+        <div class="col-sm-offset-2 col-sm-7">
+            <table>
+                <tr>
+                    <td>
+                        <p class="small"><strong>CONTACT ME</strong></p>
+                        <p>
+                            <i class="fa fa-envelope fa-2x fa-fw"></i>&nbsp;Email:&nbsp;<a href="mailto:afomin@dignicom.com">afomin@dignicom.com</a>
+                        </p>
+                        <p>
+                            <i class="fa fa-skype fa-2x fa-fw"></i>&nbsp;Skype:&nbsp;<a href="skype:andrey.fomin3?chat">andrey.fomin3</a>
+                        </p>
+                        <p>
+                            @*<i class="fa fa-github fa-2x fa-fw"></i>&nbsp;<a href="https://github.com/andfomin" target="_blank">GitHub</a>*@
+                            <i class="fa fa-phone fa-2x fa-fw"></i>&nbsp;Phone:&nbsp;+1 647 771 1715
+                        </p>
+                    </td>
+                    <td>
+                        <p class="small"><strong>DON'T CONTACT ME</strong></p>
+                        <p>
+                            <i class="fa fa-facebook-official fa-2x fa-fw"></i>&nbsp;<a href="https://www.facebook.com/andrey.fomin.940" target="_blank">Facebook</a>
+                        </p>
+                        <p>
+                            <i class="fa fa-twitter-square fa-2x fa-fw"></i>&nbsp;<a href="https://twitter.com/ca6477711715" target="_blank">Twitter</a>
+                        </p>
+                        <p>
+                            <i class="fa fa-linkedin-square fa-2x fa-fw"></i>&nbsp;<a href="https://www.linkedin.com/in/andfomin" target="_blank">LinkedIn</a>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-sm-3 text-nowrap">
+            <span>&copy; 2016</span> Andrey Fomin
+        </div>
     </div>
 </div>
+
+
+@section BottomScripts {
+    <script>
+        var setSpace = function () {
+            window.setTimeout(function () {
+                var ic = document.getElementById('myImgCol');
+                var hc = document.getElementById('myHelloCol');
+                // Workaround. Otherwise, if the window width jumps from minimum to maximum, ic.height is bigger and the element is placed too low.
+                hc.style.paddingTop = '20px';
+                var icRect = ic.getBoundingClientRect();
+                var hcRect = hc.getBoundingClientRect();
+                //console.log(icRect.top, hcRect.top);
+                if (Math.abs(icRect.top - hcRect.top) < 10) {
+                    var pad = (icRect.height - hcRect.height) / 2;
+                    hc.style.paddingTop = pad.toFixed(0) + 'px';
+                }
+            }, 0);
+        };
+        window.onresize = setSpace;
+        window.onload = setSpace;
+    </script>
+}

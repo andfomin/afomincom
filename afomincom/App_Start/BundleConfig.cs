@@ -15,9 +15,9 @@ namespace afomincom
             //          "~/Scripts/bootstrap.js"
             //          ));
 
-            bundles.Add(new StyleBundle("~/bundles/sitecss").Include(
-                      "~/content/styles/site.css"
-                      ));
+            //bundles.Add(new StyleBundle("~/bundles/sitecss").Include(
+            //          "~/content/styles/site.css"
+            //          ));
         }
     }
 }
