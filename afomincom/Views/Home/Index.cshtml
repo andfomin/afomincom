@@ -1,20 +1,21 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<link href="~/content/styles/homepage.css" rel="stylesheet" />
-
+@section HeadScripts {    
+    @Html.Partial("_HomepageStylePartial")
+}
 <div class="container-fluid">
 
-    @Html.Partial("_ResponsiveBreakpointsPartial")
+    @*@Html.Partial("_ResponsiveBreakpointsPartial")*@
 
     <div class="row">
-        <div class="col-xs-offset-3 col-sm-offset-1 col-lg-offset-2 col-xs-6 col-sm-5 col-md-4 col-lg-3" id="myImgCol">
+        <div class="col-xs-offset-2 col-sm-offset-1 col-lg-offset-2 col-xs-8 col-sm-5 col-md-4 col-lg-3" id="myImgCol">
             <img class="img-responsive" src="~/content/images/me.jpg" alt="Me" />
             <div class="my-blur-v my-blur-left"></div>
             <div class="my-blur-v my-blur-right"></div>
         </div>
         @*<div class="col-xs-2"></div>*@
-        <div class="col-lg-offset-1 col-xs-12 col-sm-6 col-lg-5" id="myHelloCol">
+        <div class="col-xs-12 col-sm-6 col-lg-5" id="myHelloCol">
             <p>
                 Hello! My&nbsp;name&nbsp;is Andrey&nbsp;Fomin.
             </p>
@@ -26,14 +27,8 @@
 </div>
 
 <div class="container">
-    <h2 style="margin-top:30px;">Quick Facts About Me</h2>
+    <h2 style="margin-top:30px;">Quick Facts About&nbsp;Me</h2>
     <div class="row">
-        <div class="col-sm-12 col-md-6">
-            <h3><i class="fa fa-wrench fa-lg fa-fw"></i>&nbsp;Skills</h3>
-            <p>
-                I have worked in many small and medium companies as well as an independant developer. Long story short, here are some facts about my professional experience.
-            </p>
-        </div>
         <div class="col-sm-12 col-md-6">
             <h3><i class="fa fa-university fa-lg fa-fw"></i>&nbsp;Experience</h3>
             <p>
@@ -41,18 +36,58 @@
             </p>
             <p>
                 I worked for entertainment company <a href="http://www.ligastavok.com/en/" target="_blank">Liga Stavok</a> from 2008 to 2011.
-                I was resposible for the development and maintenance of the core platform which sustained exponential user growth. The company uses the Microsoft technology stack.
+                I was responsible for the development and maintenance of the core platform which sustained exponential user growth. The company uses the Microsoft technology stack.
             </p>
             <p>
                 I worked for a Russian company affiliated with <a href="http://www.starcomsystems.com/" target="_blank">Starcom Systems</a> from 2005 to 2007.
-                The company develped and operated a remote monitoring system. I wrote software using Pascal, Perl, C++, C#, <span class="text-nowrap">Transact-SQL</span>.
+                The company developed and operated a remote monitoring system. I wrote software using Pascal, Perl, C++, C#, <span class="text-nowrap">Transact-SQL</span>.
             </p>
             <p>
-                I was an independant Borland Technology Partner from 2000 to 2004. I was developing and selling components for Borland Delhpi and Borland C++Builder,
+                I was an independent Borland Technology Partner from 2000 to 2004. I was developing and selling components for Borland Delphi and Borland C++Builder,
                 <a href="http://cc.codegear.com/partners/bcb6/quasidata/dbaltgrid_suite_1_4/index.html" target="_blank">this one</a> and
                 <a href="http://cc.codegear.com/partners/bcb6/quasidata/transfer_once_1_2/index.html" target="_blank">another one</a>.
             </p>
-            <p>Once upon a time ...</p>
+            <p>Once upon a time...</p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h3><i class="fa fa-wrench fa-lg fa-fw"></i>&nbsp;Skills</h3>
+            <p>
+                Visual Studio 2012, 2013, 2015
+            </p>
+            <p>
+                C# 5, LINQ, Async
+            </p>
+            <p>
+                ASP.NET MVC, Web API, SignalR
+            </p>
+            <p>
+                HTML5, Web Audio, debugging in Chrome on Android and Safari on iOS
+            </p>
+            <p>
+                CSS3, Bootstrap 3, LESS, Responsive design
+            </p>
+            <p>
+                JavaScript, TypeScript, AngularJS 1, Angular-UI, Knockout JS 2, JQuery
+            </p>
+            <p>
+                Azure: Web Apps, Web/Worker Roles, VMs, SQL Database, Blob/Table Storage, Search
+            </p>
+            <p>
+                SQL Server 2008, 2012
+            </p>
+            <p>
+                Entity Framework, Dapper ORM
+            </p>
+            <p>
+                WPF, Workflow Foundation
+            </p>
+            <p>
+                Skype Desktop API, FreeSwitch, Audio Processing
+            </p>
+            <p>
+                There are some examples of my code on
+                <i class="fa fa-github fa-lg fa-fw"></i><a href="https://github.com/andfomin" target="_blank">GitHub</a>
+            </p>
         </div>
         <div class="clearfix visible-md-block visible-lg-block"></div>
         <div class="col-sm-12 col-md-6">
@@ -67,12 +102,12 @@
         <div class="col-sm-12 col-md-6">
             <h3><i class="fa fa-map-marker fa-lg fa-fw"></i>&nbsp;Location</h3>
             <p>
-                I live in Toronto, Ontario.
+                I have been living in Toronto, Ontario since 2011.
             </p>
         </div>
     </div>
     <hr />
-    <h2 style="margin-top:30px;margin-bottom:30px;">Quirky Facts About Me</h2>
+    <h2 style="margin-top:30px;margin-bottom:30px;">Quirky Facts About&nbsp;Me</h2>
     <div class="row">
         <div class="col-sm-12 col-md-6">
             <p>
@@ -81,7 +116,7 @@
         </div>
         <div class="col-sm-12 col-md-6">
             <p>
-               I have been living in Canada since 2011 and I am a Canadian citizen. Although I played hockey a few seasons for my school team, I find watching hockey boring.
+                I am a Canadian citizen. Although I enjoy playing shinny, I find watching hockey boring.
             </p>
         </div>
         <div class="clearfix visible-md-block visible-lg-block"></div>
@@ -107,41 +142,37 @@
 
 </div>
 
+
 <div class="container-fluid my-footer">
     <div class="row">
-        <div class="col-sm-offset-2 col-sm-7">
-            <table>
-                <tr>
-                    <td>
-                        <p class="small"><strong>CONTACT ME</strong></p>
-                        <p>
-                            <i class="fa fa-envelope fa-2x fa-fw"></i>&nbsp;Email:&nbsp;<a href="mailto:afomin@dignicom.com">afomin@dignicom.com</a>
-                        </p>
-                        <p>
-                            <i class="fa fa-skype fa-2x fa-fw"></i>&nbsp;Skype:&nbsp;<a href="skype:andrey.fomin3?chat">andrey.fomin3</a>
-                        </p>
-                        <p>
-                            @*<i class="fa fa-github fa-2x fa-fw"></i>&nbsp;<a href="https://github.com/andfomin" target="_blank">GitHub</a>*@
-                            <i class="fa fa-phone fa-2x fa-fw"></i>&nbsp;Phone:&nbsp;+1 647 771 1715
-                        </p>
-                    </td>
-                    <td>
-                        <p class="small"><strong>DON'T CONTACT ME</strong></p>
-                        <p>
-                            <i class="fa fa-facebook-official fa-2x fa-fw"></i>&nbsp;<a href="https://www.facebook.com/andrey.fomin.940" target="_blank">Facebook</a>
-                        </p>
-                        <p>
-                            <i class="fa fa-twitter-square fa-2x fa-fw"></i>&nbsp;<a href="https://twitter.com/ca6477711715" target="_blank">Twitter</a>
-                        </p>
-                        <p>
-                            <i class="fa fa-linkedin-square fa-2x fa-fw"></i>&nbsp;<a href="https://www.linkedin.com/in/andfomin" target="_blank">LinkedIn</a>
-                        </p>
-                    </td>
-                </tr>
-            </table>
+        <div class="col-md-offset-1 col-sm-6 col-md-4">
+            <p class="small"><strong>CONTACT ME</strong></p>
+            <p>
+                <i class="fa fa-at fa-2x fa-fw"></i>&nbsp;Email:&nbsp;<a href="mailto:afomin@afomin.com">afomin@afomin.com</a>
+            </p>
+            <p>
+                <i class="fa fa-skype fa-2x fa-fw"></i>&nbsp;Skype:&nbsp;<a href="skype:andrey.fomin3?chat">andrey.fomin3</a>
+            </p>
+            <p>
+                <i class="fa fa-phone fa-2x fa-fw"></i>&nbsp;Phone:&nbsp;<a href="tel:+1-647-771-1715">+1 (647) 771-1715</a>
+            </p>
         </div>
-        <div class="col-sm-3 text-nowrap">
-            <span>&copy; 2016</span> Andrey Fomin
+        <div class="col-sm-6 col-md-4">
+            <p class="small"><strong>DON'T CONTACT ME</strong></p>
+            <p>
+                <i class="fa fa-facebook-official fa-2x fa-fw"></i>&nbsp;<a href="https://www.facebook.com/andrey.fomin.940" target="_blank">Facebook</a>
+            </p>
+            <p>
+                <i class="fa fa-twitter-square fa-2x fa-fw"></i>&nbsp;<a href="https://twitter.com/ca6477711715" target="_blank">Twitter</a>
+            </p>
+            <p>
+                <i class="fa fa-linkedin-square fa-2x fa-fw"></i>&nbsp;<a href="https://www.linkedin.com/in/andfomin" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+        <div class="col-sm-3">
+            <p class="text-right text-nowrap">
+                <span>&copy; 2016</span> Andrey Fomin
+            </p>
         </div>
     </div>
 </div>

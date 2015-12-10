@@ -127,7 +127,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="content\images\me.jpg" />
-    <Content Include="content\styles\homepage.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <None Include="Properties\PublishProfiles\afomin.pubxml" />
@@ -145,10 +144,12 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_ResponsiveBreakpointsPartial.cshtml" />
+    <Content Include="Views\Home\_HomepageStylePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="App_Data\" />
+    <Folder Include="content\styles\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
